@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alumni+Sans+Collegiate+One&family=Borel&family=Bricolage+Grotesque&family=Kanit:ital,wght@1,100&family=Oswald:wght@700&family=Patua+One&family=Roboto:wght@100&family=Yatra+One&display=swap" rel="stylesheet">
+<style>
+    /* for intro particle */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 20px;
+    padding: 4px 18px;
+    text-decoration: none;
+    color: rgb(9, 133, 241);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+nav ul li a:hover{
+    color:orangered;
+    cursor: pointer;
+}
+nav ul li a:active{
+    text-decoration: underline;
+}
+
+nav div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+nav div:hover{
+    color:blue;
+    
+}
+.shorthead{
+    display: flex;
+    flex-direction: column;
+    font-size:20px;
+    font-family:fantasy;
+    margin-top:10px;
+}
+.head{font-size:9vh;
+margin-left: 10px;}
+
+.me:hover{cursor:pointer;}
+
+
+body::before {
+    content: "";
+    background-image: url("1600w-_Tcjok-d9b4.webp");
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#myself {
+    display: flex;
+    flex-direction:row;
+    align-content: center;
+    align-items:center;
+    /* border: 4px solid red; */
+    margin-top: 40px;
+}
+.me{display: flex;
+    flex-direction: column;
+    /* border:4px solid green; */
+    justify-content: center;
+    align-content: center;
+    margin-left: 300px;
+    margin-right: 0px;
+}
+.hey{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+.me h1{
+    font-size: 10vh;
+    font-family:Alumni Sans Collegiate One;
+    font-weight: 200;
+}
+.course{
+    font-size: 25px;
+}
+#myself img{
+    margin-left:10px;
+    margin-right: 0px;
+    height: 100%;
+}
+
+/* for skills part */
+
+#SKILLS{margin-top:42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px solid red; */
+    background-image: url("1600w-_Tcjok-d9b4.webp");
+    
+}
+
+#SKILLS h1{
+    font-size: 8vh;
+    text-decoration: underline;
+    margin: 15px;
+    margin-bottom: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+#html{ padding:10px;
+height:230px;}
+
+#css{height:230px;
+    margin-left:80px;
+    margin-right: 0px;
+    padding:10px;
+
+}
+#js{
+    height:230px;
+    margin-left:10px;
+    margin-right: 0px;
+    padding:10px;
+}
+#canva{
+    height:230px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding:10px;
+}
+
+/* for contact part */
+#form{display: flex;
+flex-direction: column;
+background-image: url("1600w-_Tcjok-d9b4.webp");
+
+}
+
+.form{display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.form h1{font-size: 8vh;
+    text-decoration: underline;
+    margin: 15px;
+    margin-bottom: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+form{
+    display: flex;
+    flex-direction:column;
+    width:50%;
+    margin:20px;
+    margin-top:15px;
+    border-radius:10px;
+    font-size: 20px;
+    background-color: transparent;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+input{border-color: black;
+height:35px;
+padding:5px;
+margin:5px;
+color:black;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#sub{font-size: 20px;
+display: inline-block;
+font-family: sans-serif;
+font-style: italic;
+border-radius:8px;}
+
+#sub:hover{
+    background-color: rgb(255, 181, 216);
+    font-size:25px;
+    height:35px;
+    border-radius:12px;
+}
+/* for media part */
+#media img{
+    border-radius:120px;
+    height:35px;
+}
+#social{display:block;
+margin:auto;}
+
+.social{display: flex;
+flex-direction: row;
+background-color: black;
+border-radius:20px;
+justify-content: center;}
+
+.insta , .linkedin{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    margin:10px 50px 10px 50px;
+}
+
+.insta a , .linkedin a {margin-left:10px;
+color:aliceblue;}
+
+.social a:hover{
+    color:blue;
+    font-size: 15px;
+}
+
+</style>
+</head>
+<body>
+    <nav>
+        <div>
+            <p class="head"><b>P</b></p>
+            <div class="shorthead">
+                <p>ERSONAL</p>
+                <P>ORTFOLIO</P>
+            </div>
+            
+        </div>
+        
+        <ul>
+            <li class="items"><a href="#home">HOME</a></li>
+            <li class="items"><a href="#about">ABOUT ME</a></li>
+            <li class="items"><a href="#form">CONTACT</a></li>
+            <li class="items"><a href="#details">DETAILS</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="myself">
+        <div class="me">
+
+            <p class="hey">hey! I am </p>
+            <h1>Shreyansh Kumar Singh</h1>
+            <p class="course">Pursuing <b>CS(hons)</b> from Kirorimal College,</p>
+            <p class="course"><i>DELHI UNIVERSITY</i></p>
+        </div>
+
+        <img src="picsks.png" alt="profile" class="profile">
+
+    </section>
+
+    <section id="SKILLS">
+        <h1>Skill Set</h1>
+        <div class="cont">
+            <div class="box">
+                <img src="html-removebg-preview.png" alt="HTML" id="html">
+                
+            </div>
+
+            <div class="box">
+                <img src="download-removebg-preview (1).png" alt="CSS" id="css">
+                
+            </div>
+
+            <div class="box">
+                <img src="javas-removebg-preview.png" alt="JS" id="js">
+            </div>
+            <div class="box">
+                <img src="canva.jpg" alt="Canva" id="canva">
+                
+            </div>
+        </div></section>
+
+        <section id="form">
+            <div class="form">
+                <h1>CONTACT</h1>
+                <form action="action.php">
+                    <label for="name">NAME:</label>
+                    <input type="text" name="name" id="name" placeholder="NAME" required>
+                    <label for="email">EMAIL:
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="EMAIL" required>
+                    <label for="phnno"> PHONE NUMBER:
+                    </label>
+                    <input type="text" name="number" id="phnno" placeholder="PHONE NUMBER" required>
+                    <label for="message">MESSAGE:
+                    </label>
+                    <input type="textarea" name="message" id="message" placeholder="your text here..." rows="50px" cols="50px">
+                    <input type="button" value="SUBMIT" id="sub">
+                </form>
+                <div id="media">
+                    <div class="social">
+                        <div class="insta">
+                            <img src="download.jpg" alt="">
+                            <a href="https://instagram.com/shrey_4_9?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">@shrey_4_9</a>
+
+                        </div>
+                        <div class="linkedin">
+                            <img src="download.png" alt="">
+                            <a href="https://www.linkedin.com/in/shreyansh-kumar-singh-936784261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Shreyansh Kumar Singh</a>
+                        </div>
+
+                    </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    
+</body>
+</html>
